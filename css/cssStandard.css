@@ -386,8 +386,7 @@ a:hover {
 
 /*/primeiraParte - fim/*/
 
-#ProjetoEmpresa{
-  /*color: white;*/
+#ProjetoEmpresa {
 
 }
 
@@ -398,12 +397,36 @@ a:hover {
     background: -o-linear-gradient(#FFB200, #CC654B); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#FFB200, #CC654B); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#FFB200, #CC654B); /* Standard syntax (must be last) */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+
+}
+
+.texto{
+     width: 80%;
+  text-align: justify;
+  justify-content: center;
+
 }
 
 .Empresa{
   display: flex;
   font-size: 51px;
   background-color: #CC654B;
+   padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.Empresa img{
+    padding-right: 7%;
 }
 
 #Escopo{
@@ -413,23 +436,61 @@ a:hover {
     background: -o-linear-gradient(#CC654B, #FFB200); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#CC654B, #FFB200); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#CC654B, #FFB200); /* Standard syntax (must be last) */
+     padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
 }
+#Escopo img{
+    padding-left: 7%;
+}
+
+
 
 #Funcionalidades{
   background-color: #f4f3c9;
   color: #cc654b;
   font-size: 75px;
+  width: 100%;
+  padding-bottom: 30%;
+}
+#Funcionalidades h1{
+     padding-top: 2%;
+    padding-bottom: 2%;
+}
 
+.galeria{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+}
+
+
+.galeria img{
+     width: 100%;
+    height: auto;
+    display: block;
 }
 
 #Membros{
   background-color: #fcb259;
 }
 
+#Membros h1{
+      padding-top: 2%;
+    padding-bottom: 2%;
+}
+
 .MembrosWebDesign{
   background-color: #fcb259;
   text-align: center;
   display: flex;
+  padding-top: 2%;
+    padding-bottom: 3%;
+    justify-content: space-around;
 }
 
 .MembrosWebDesign img{
@@ -438,14 +499,29 @@ a:hover {
      
 }
 
+
 .MembrosEquipe{
   background-color: #d86c23;
   text-align: center;
 }
 
+#equipe{
+    padding-bottom: 3%;
+}
+
 #BackEnd{
 background-color: #ba3e1c;
 text-align: center;
+padding-bottom: 3%;
+}
+
+#BackEnd div {
+     width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 2%;
 }
 
 .piramide{
@@ -461,11 +537,74 @@ text-align: center;
 #FrontEnd{
 background-color: #e68c25;
 text-align: center;
+padding-bottom: 3%;
 
+}
+
+#FrontEnd div {
+     width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 2%;
 }
 
 footer{
 background-color: #f4f3c9;
 font-size: 46px;
 display: flex;
+padding-top: 2%;
+padding-bottom: 2%;
+justify-content: center;
+
+}
+
+footer img{
+    width: 345.6px;
+    height: 88.08px;
+    padding-right: 5%; 
+
+}
+
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+  text-align: justify;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
