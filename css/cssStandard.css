@@ -1,0 +1,471 @@
+/*/ configuração da fonte  - incio/*/
+
+@font-face {
+    font-family: RL;
+    src: url('../fonts/RajdhaniLight.ttf');
+}
+
+@font-face {
+    font-family: RR;
+    src: url('../fonts/RajdhaniRegular.ttf');
+}
+
+@font-face {
+    font-family: RSB;
+    src: url('../fonts/RajdhaniSemiBold.ttf');
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+H1, p {
+    font-family: RR, 'Segoe UI';
+}
+h1{
+    text-align: center;
+}
+
+H2, a{
+    font-family: RSB, 'Segoe UI';
+}
+
+.texto{
+    font-family: RL, 'Segoe UI';
+    font-size: 38px;
+}
+
+
+/*/ configuração da fonte  - fim/*/
+
+/*/ configuração de todos os objetos - inicio/*/
+
+* {
+    font-family: He, 'Segoe UI';
+    box-sizing: border-box;
+
+}
+
+:not(terceiraParte) {
+    margin: 0px;
+}
+
+#body {
+    margin: 0px;
+}
+
+/*/ configuração de todos os objetos - fim/*/
+
+/*/ configuração dos titulos e paragrafos e links - inicio/*/
+
+/*H*/
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 24px;
+    }
+
+
+
+    h2 {
+        font-size: 23Px;
+    }
+
+    /*P*/
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    /*P*/
+    p {
+        font-size: 3vw;
+    }
+}
+
+h3 {
+    font-size: 4vw;
+}
+
+h4 {
+    font-size: 3vw;
+}
+
+h5 {
+    font-size: 2vw;
+}
+
+h6 {
+    font-size: 1vw;
+}
+
+
+
+
+
+
+/*A*/
+
+a {
+    color: white;
+    font-size: 2.7vw;
+    text-decoration: none;
+    transition: color, 0.5s;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*/ configuração dos titulos e paragrafos e links - fim/*/
+
+
+
+/*/nav bar - inicio/*/
+
+/**--------*pcs*/
+
+@media screen and (min-width: 800px) {
+
+    nav {
+        /*flex do nav*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+
+
+        /*outras configurações*/
+        background-color: black;
+        padding-left: 5vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        z-index: 500;
+        align-items: center;
+
+
+    }
+
+    nav .links {
+        /*flex do nav*/
+        flex: 2;
+
+        /*flex dos links*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+
+    }
+
+
+    nav .imagem {
+        flex: 0;
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+
+    nav .imagem a img {
+        width: 3.6vw;
+    }
+
+    /*não exibir menu secundario*/
+    .botaoMobile {
+        display: none;
+    }
+    .tituloMobile {
+        display: none;
+    }
+    .navegacaoMobile {
+        display: none;
+    }
+}
+
+
+/*--------*mobiles*/
+
+@media screen and (max-width: 800px) {
+    /*retirando a navegação de pc*/
+    nav {
+        display: none;
+    }
+
+
+    /*/////////*configurando a navegação mobile*/
+    /*********configuração de visualização do site*/
+    /*barra nav*/
+    .navegSecun {
+        /*flex*/
+        display: flex;
+
+        /*outras configs*/
+        background-color: black;
+        position: fixed;
+        right: 0px;
+        left: 0px;
+        z-index: 200;
+    }
+
+    /*botão de exibir o menu*/
+    .botaoMobile {
+        /*flex*/
+        flex: 1;
+        /*flex proprio*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /*outras configs*/
+        background-color: black;
+        border: none;
+
+
+    }
+    .botaoMobile img {
+
+        /*outras configs*/
+        width: 20vw;
+
+    }
+
+
+    /*links*/
+    .navegacaoMobile {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    /*configuração do X*/
+    .botaoEscondedor {
+        display: none;
+    }
+
+    /*******configuração de visualização da nav (tela cheia)*/
+    /*barra nav(tela cheia)*/
+    .navegSecun.confgTWO {
+        display: flex;
+        background-color: black;
+        width: 100%;
+
+    }
+
+    /*botão de exibir o menu*/
+    .botaoMobile.sumiu {
+        display: none;
+    }
+
+
+    /*imagem do botaoMobile*/
+    .botaoMenu.exibido {
+        display: none;
+    }
+
+    /*links*/
+    .navegacaoMobile.exibido {
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: black;
+        z-index: 100;
+    }
+    /*configuração dos links para a navegação suspensa*/
+    .phat {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    .phat li {
+
+        margin: 50px;
+
+    }
+    .phat a {
+        font-size: 50px !important;
+
+    }
+
+    /*botão de fechar o menu*/
+    .botaoEscondedor {
+        margin-top: 40px;
+        margin-left: 40px;
+        width: auto;
+
+        font-size: 4vw;
+
+        position: fixed;
+        right: 40px;
+
+        color: white;
+        background-color: transparent;
+        border-color: white;
+        border-style: dashed;
+    }
+
+    /*configuração do X*/
+    .botaoEscondedor.exibido {
+        display: block;
+        font-size: 50px;
+
+    }
+
+
+
+    .navegacaoMobile ul li a {
+        position: absolute;
+        margin: 5px;
+        font-size: 4px;
+        left: 0px;
+    }
+
+
+
+}
+
+/*/nav bar - fim/*/
+
+/*/logan - inicio/*/
+
+/*primeiraParte - inicio*/
+
+#primeiraParte {
+    /*flex*/
+    display: flex;
+    flex-direction: column-reverse;
+
+    /*configuração da imagem*/
+    background-image: url(../media/bg-top.svg);
+    background-size: 100%;
+    background-attachment: fixed;
+
+    /*configuração do fundo em si*/
+    width: 100%;
+    height: 50vw;
+}
+
+
+#logo {
+  margin-top: 5vw;
+    flex: 1;
+    order: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#primeiraParte #logo img {
+    order: 99;
+    align-content: flex-end;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 5vw;
+    margin-right: 3vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*/primeiraParte - fim/*/
+
+#ProjetoEmpresa{
+  /*color: white;*/
+
+}
+
+.Projeto{
+  display: flex;
+  font-size: 51px;
+   background: -webkit-linear-gradient(#FFB200, #CC654B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFB200, #CC654B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFB200, #CC654B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFB200, #CC654B); /* Standard syntax (must be last) */
+}
+
+.Empresa{
+  display: flex;
+  font-size: 51px;
+  background-color: #CC654B;
+}
+
+#Escopo{
+  display: flex;
+  font-size: 51px;
+  background: -webkit-linear-gradient(#CC654B, #FFB200); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#CC654B, #FFB200); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#CC654B, #FFB200); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#CC654B, #FFB200); /* Standard syntax (must be last) */
+}
+
+#Funcionalidades{
+  background-color: #f4f3c9;
+  color: #cc654b;
+  font-size: 75px;
+
+}
+
+#Membros{
+  background-color: #fcb259;
+}
+
+.MembrosWebDesign{
+  background-color: #fcb259;
+  text-align: center;
+  display: flex;
+}
+
+.MembrosWebDesign img{
+    height: 218px;
+    width: 218px;
+     
+}
+
+.MembrosEquipe{
+  background-color: #d86c23;
+  text-align: center;
+}
+
+#BackEnd{
+background-color: #ba3e1c;
+text-align: center;
+}
+
+.piramide{
+  display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+#FrontEnd{
+background-color: #e68c25;
+text-align: center;
+
+}
+
+footer{
+background-color: #f4f3c9;
+font-size: 46px;
+display: flex;
+}

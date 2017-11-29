@@ -1,0 +1,87 @@
+@font-face {
+    font-family: RL;
+    src: url('../fonts/RajdhaniLight.ttf');
+}
+
+@font-face {
+    font-family: RR;
+    src: url('../fonts/RajdhaniRegular.ttf');
+}
+
+@font-face {
+    font-family: RSB;
+    src: url('../fonts/RajdhaniSemiBold.ttf');
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+H1, p {
+    font-family: RR, 'Segoe UI';
+}
+
+H2, a{
+    font-family: RSB, 'Segoe UI';
+}
+
+.texto{
+    font-family: RL, 'Segoe UI';
+}
+
+
+.navbar{
+    background-image: url("../media/bg-top.svg");
+    background-repeat: no-repeat;
+}
+
+ul{
+    background-image: url("../media/NAVAtivo5.svg");
+     background-repeat: no-repeat;
+}
+
+#ProjetoEmpresa{
+
+}
+
+.Projeto{
+
+}
+
+.Empresa{
+
+}
+
+.Escopo{
+
+}
+
+#Funcionalidades{
+  background-color: #f4f3c9;
+
+}
+
+#Membros{
+
+}
+
+.MembrosWebDesign{
+
+}
+
+.MembrosEquipe{
+
+}
+
+#BackEnd{
+
+}
+
+#FrontEnd{
+
+}
+
+footer{
+
+}
