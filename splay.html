@@ -11,9 +11,11 @@
     <nav class="navbar">
 
       <div class="imagem">
+        <div id="imgLink">
           <a href=#body>
-              <img src="media/sAtivo 7.svg" alt="Logo do Projeto">
+              <img src="media/outros/Prancheta 1.svg" alt="Logo do Projeto">
           </a>
+        </div>
       </div>
 
       <div class="links">
@@ -24,7 +26,59 @@
       </div>
   </nav>
 
+  <!--navegação mobile -inicio-->
+  <div class="navegSecun">
 
+      <button class="botaoMobile"> <img class="botaoMenu" src="media/sAtivo 7.svg" alt="menu"></button>
+
+      <nav class="navegacaoMobile">
+
+
+
+          <ul>
+
+             <div class="phat">
+              <button class="botaoEscondedor">X</button>
+              <li><a  href="#ProjetoEmpresa">Projeto & Empresa</a></li>
+              <li><a  href="#Escopo">Escopo</a></li>
+              <li><a  href="#Funcionalidades">Funcionalidades</a></li>
+              <li><a  href="#Membros">Membros</a></li>
+              </div>
+          </ul>
+      </nav>
+
+
+    <script src="JS/jquery-3.2.1.min.js"></script>
+      <script>
+          $(".botaoMobile").click(function() {
+              $(".navegacaoMobile").addClass('exibido');
+              $(".tituloMobile").addClass('exibido');
+              $(".botaoMobile").addClass('sumiu');
+              $(".navegSecun").addClass('confgTWO');
+              $("a").addClass('NavMenu');
+              $(".botaoEscondedor").addClass('exibido');
+          })
+
+          $(".botaoEscondedor").click(function() {
+              $(".navegacaoMobile").removeClass('exibido');
+              $(".tituloMobile").removeClass('exibido');
+              $(".botaoMobile").removeClass('sumiu');
+              $(".navegSecun").removeClass('confgTWO');
+              $("a").removeClass('NavMenu');
+              $(".botaoEscondedor").removeClass('exibido');
+          })
+
+          $("li a").click(function() {
+              $(".navegacaoMobile").removeClass('exibido');
+              $(".tituloMobile").removeClass('exibido');
+              $(".botaoMobile").removeClass('sumiu');
+              $(".navegSecun").removeClass('confgTWO');
+              $("a").removeClass('NavMenu');
+              $(".botaoEscondedor").removeClass('exibido');
+          })
+
+      </script>
+  </div>
   <div id="primeiraParte">
        <div id="logo">
            <img src="media\logo.svg" alt="Nome do Projeto">
@@ -39,8 +93,8 @@
        <div>
         <h1>Projeto</h1>
         <p class="texto">SPlay é uma plataforma online,
-profissional e educacional a 
-distância visando mudar esta 
+profissional e educacional a
+distância visando mudar esta
 forma de aprendizagem. </p>
       </div>
 
@@ -87,7 +141,7 @@ forma de aprendizagem. </p>
 <div id="Funcionalidades">
 
   <h1>Funcionalidades</h1>
-
+<div id="fullGaleria">
   <div class="galeria">
     <div class="container">
   <img src="media/Img1Ativo6.png"  alt="Avatar" class="image">
@@ -115,10 +169,8 @@ forma de aprendizagem. </p>
       </div>
     </div>
   </div>
-  
-    <video controls autopla>
-      <source src="media/splayvideo.mp4" type="video/mp4"/>
-  
+
+</div>
 </div>
 
 <!-- Membros -->
@@ -143,18 +195,18 @@ forma de aprendizagem. </p>
           <div id="BackEnd">
                <h1>Back End</h1>
                <div>
-                 <img src="media/perfil-generico.jpg"/>
+                 <img class="func" src="media/perfil-generico.jpg"/>
                  <p>Luciano Bispo dos Santos Junior</p>
                </div>
 
                <section class="piramide">
                <div>
-                <img src="media/perfil-generico.jpg"/>
+                <img class="func" src="media/perfil-generico.jpg"/>
                 <p>Daniel Kenji Kobashigawa</p>
                </div>
 
               <div>
-                <img src="media/perfil-generico.jpg"/>
+                <img class="func" src="media/perfil-generico.jpg"/>
                 <p>Daniel Clemente Silva </p>
               </div>
             </section>
@@ -163,24 +215,24 @@ forma de aprendizagem. </p>
           <div id="FrontEnd">
             <h1>Front End</h1>
               <div>
-                <img src="media/perfil-generico.jpg"/>
+                <img class="func" src="media/perfil-generico.jpg"/>
                 <p>Raul Rodrigues Arcoverde(Gerente)</p>
               </div>
 
               <section class="piramide">
                 <div>
-                <img src="media/perfil-generico.jpg"/>
+                <img class="func" src="media/perfil-generico.jpg"/>
                 <p>João Matheus Rodrigues Silva</p>
               </div>
 
               <div>
-                <img src="media/perfil-generico.jpg"/>
+                <img class="func" src="media/perfil-generico.jpg"/>
                 <p>Luis Gustavo Costa Almeida</p>
               </div>
             </section>
 
               <div>
-                <img src="media/perfil-generico.jpg"/>
+                <img class="func" src="media/perfil-generico.jpg"/>
                 <p>Vinicios Oliveira Souza</p>
               </div>
           </div>
