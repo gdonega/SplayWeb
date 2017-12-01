@@ -164,7 +164,7 @@ a:hover {
 
 
         margin: 0px;
-
+top: 0px;
         padding-left: 5vw;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -193,6 +193,7 @@ a:hover {
     }
 
     #imgLinkimg{
+      height: 100%;
         width: 3.6vw;
         transition: color, 0.5s;
     }
