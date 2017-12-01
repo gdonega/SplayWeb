@@ -59,6 +59,7 @@ a,
 
 #body {
     margin: 0px;
+    background-color: #f4f3c9;
 }
 
 /*/ configuração de todos os objetos - fim/*/
@@ -540,7 +541,7 @@ a:hover {
 
 
 .galeria {
-    margin-bottom: 50px;
+
     float: left;
     width: 100%;
     padding-left: 2%;
