@@ -15,23 +15,27 @@
     src: url('../fonts/RajdhaniSemiBold.ttf');
 }
 
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 
-H1, p {
+H1,
+p {
     font-family: RR, 'Segoe UI';
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
-H2, a, .text{
+H2,
+a,
+.text {
     font-family: RSB, 'Segoe UI';
 }
 
-.texto{
+.texto {
     font-family: RL, 'Segoe UI';
     font-size: 2vw;
     text-align: justify;
@@ -131,36 +135,45 @@ a:hover {
 
 /*/ configuração dos titulos e paragrafos e links - fim/*/
 
-
-
 /*/nav bar - inicio/*/
 
 /**--------*pcs*/
 
 @media screen and (min-width: 800px) {
 
+
+
     nav {
         /*flex do nav*/
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-
 
 
 
         /*outras configurações*/
+        background-image: url(../media/outros/lala.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        width: 100%;
+
+        position: fixed;
+
+        background-position: center;
+
+        z-index: 500;
+
+
+        margin: 0px;
+
         padding-left: 5vw;
         padding-top: 5px;
         padding-bottom: 5px;
         position: fixed;
-        left: 0px;
-        right: 0px;
-        top: 0px;
+
+        width: 100%;
+
+
         z-index: 500;
-        align-items: center;
-        background-image: url(../media/outros/lala.svg);
-        background-size: 100%;
+
 
 
     }
@@ -169,34 +182,36 @@ a:hover {
 
     nav .links {
         /*flex do nav*/
-        flex: 2;
+        flex: 01;
 
         /*flex dos links*/
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        align-self: center;
         flex-wrap: wrap;
 
     }
 
-imgLink{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-  /*  nav .imagem {
+    /*  nav .imagem {
         flex: 0;
         display: flex;
         align-self: center;
         align-items: center;
     }*/
-
-    nav .imagem a img {
+    #imgLink a img {
         width: 3.6vw;
     }
 
+
+    #imgLink {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #imgLink * {
+        display: flex;
+    }
     /*não exibir menu secundario*/
     .botaoMobile {
         display: none;
@@ -227,7 +242,6 @@ imgLink{
         display: flex;
 
         /*outras configs*/
-
         position: fixed;
         right: 0px;
         left: 0px;
@@ -378,7 +392,7 @@ imgLink{
 
 
 #logo {
-  margin-top: 5vw;
+    margin-top: 5vw;
     flex: 1;
     order: 99;
     display: flex;
@@ -399,115 +413,128 @@ imgLink{
 
 /*/primeiraParte - fim/*/
 
-#ProjetoEmpresa H1{
-  color: white;
+#ProjetoEmpresa H1 {
+    color: white;
 }
 
-#ProjetoEmpresa p{
-  color: white;
+#ProjetoEmpresa p {
+    color: white;
 }
 
-#ProjetoEmpresa section{
-  padding: 2vw;
+#ProjetoEmpresa section {
+    padding: 2vw;
 }
 
-#ProjetoEmpresa section{
-  justify-content: center;
-  align-self: center;
-  align-items: center;
+#ProjetoEmpresa section {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
 }
 
-.Projeto{
-  display: flex;
-   background: -webkit-linear-gradient(#FFB200, #CC654B); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFB200, #CC654B); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFB200, #CC654B); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFB200, #CC654B); /* Standard syntax (must be last) */
-}
-
-
-
-.Empresa{
-  display: flex;
-  font-size: 30px;
-  background-color: #CC654B;
-
-}
-
-
-#Escopo{
-  display: flex;
-  font-size: 30px;
-  background: -webkit-linear-gradient(#CC654B, #FFB200); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#CC654B, #FFB200); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#CC654B, #FFB200); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#CC654B, #FFB200); /* Standard syntax (must be last) */
-
-}
-.lateral1{
-  display:flex;
-  flex-direction: column;
-  padding: 1vw;
-  flex: 2;
-  align-self: center;
-  justify-content: center;
-}
-.imgtype1{
-  display: flex;
-  margin: 1vw;
-  flex: 2;
-  align-self: center;
-  justify-content: center;
-}
-.imgtype2{
-display: flex;
-  margin: 1vw;
-  flex: 2;
-  align-self: center;
-  justify-content: center;
-}
-.lateral2{
-  display:flex;
-  flex-direction: column;
-  padding: 1vw;
-  flex: 2;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgtype1 img{
-  width: 40vw;
-}
-.imgtype2 img{
-  width: 40vw;
-}
-
-
-#fullGaleria{
-display: flex;
-flex-direction: column;
-align-items: center;
+.Projeto {
+    display: flex;
+    background: -webkit-linear-gradient(#FFB200, #CC654B);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFB200, #CC654B);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFB200, #CC654B);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFB200, #CC654B);
+    /* Standard syntax (must be last) */
 }
 
 
 
-#Funcionalidades{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.Empresa {
+    display: flex;
+    font-size: 30px;
+    background-color: #CC654B;
 
-  background-color: #f4f3c9;
-  color: #cc654b;
-  font-size: 100px;
-  width: 100%;
-  height: 100%;
-
-  padding-bottom: 3%;
 }
-#Funcionalidades h1{
-     padding-top: 2%;
+
+
+#Escopo {
+    display: flex;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#CC654B, #FFB200);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#CC654B, #FFB200);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#CC654B, #FFB200);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#CC654B, #FFB200);
+    /* Standard syntax (must be last) */
+}
+
+.lateral1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    flex: 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.imgtype1 {
+    display: flex;
+    margin: 1vw;
+    flex: 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.imgtype2 {
+    display: flex;
+    margin: 1vw;
+    flex: 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.lateral2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    flex: 2;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgtype1 img {
+    width: 40vw;
+}
+
+.imgtype2 img {
+    width: 40vw;
+}
+
+
+#fullGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#Funcionalidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f3c9;
+    color: #cc654b;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 3%;
+}
+
+#Funcionalidades h1 {
+    padding-top: 2%;
     padding-bottom: 2%;
     justify-content: space-around;
     padding-left: 10%;
@@ -517,7 +544,7 @@ align-items: center;
 
 
 
-.galeria{
+.galeria {
     margin: 5px;
     float: left;
     width: 100%;
@@ -526,64 +553,64 @@ align-items: center;
 }
 
 
-.galeria img{
-     width: 50vw;
+.galeria img {
+    width: 50vw;
     height: auto;
     display: block;
 }
 
-#Membros{
-  background-color: #fcb259;
+#Membros {
+    background-color: #fcb259;
 
 }
 
-#Membros h1{
-      padding-top: 2%;
+#Membros h1 {
+    padding-top: 2%;
     padding-bottom: 2%;
 }
 
-.MembrosWebDesign{
-  background-color: #fcb259;
-  text-align: center;
-  display: flex;
-  padding-top: 2%;
+.MembrosWebDesign {
+    background-color: #fcb259;
+    text-align: center;
+    display: flex;
+    padding-top: 2%;
     padding-bottom: 3%;
     justify-content: space-around;
     padding-left: 3%;
     padding-right: 3%;
 }
 
-.MembrosWebDesign img{
+.MembrosWebDesign img {
     height: auto;
     width: 20vw;
     border-radius: 5vw;
 
 }
 
-.func{
-  width: 20vw;
+.func {
+    width: 20vw;
 }
 
-.MembrosEquipe{
-  background-color: #d86c23;
-  text-align: center;
+.MembrosEquipe {
+    background-color: #d86c23;
+    text-align: center;
 }
 
-#equipe{
+#equipe {
     align-self: center;
     width: 40vw;
 }
 
-#BackEnd{
-background-color: #ba3e1c;
-text-align: center;
-padding-bottom: 3%;
-padding-left: 3%;
-padding-right: 3%;
+#BackEnd {
+    background-color: #ba3e1c;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #BackEnd div {
-     width: 100%;
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -592,8 +619,8 @@ padding-right: 3%;
 }
 
 
-.piramide{
-  display: flex;
+.piramide {
+    display: flex;
     width: 100%;
     text-align: center;
     margin: 0;
@@ -602,17 +629,17 @@ padding-right: 3%;
     justify-content: space-around;
 }
 
-#FrontEnd{
-background-color: #e68c25;
-text-align: center;
-padding-bottom: 3%;
-padding-left: 3%;
-padding-right: 3%;
+#FrontEnd {
+    background-color: #e68c25;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
 
 }
 
 #FrontEnd div {
-     width: 100%;
+    width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -620,64 +647,64 @@ padding-right: 3%;
     padding-bottom: 2%;
 }
 
-footer{
-background-color: #f4f3c9;
-font-size: 3.5vw;
-display: flex;
-padding-top: 2%;
-padding-bottom: 2%;
-justify-content: center;
+footer {
+    background-color: #f4f3c9;
+    font-size: 3.5vw;
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: center;
 
 }
 
-footer img{
+footer img {
     width: 25vw;
     height: auto;
     padding-right: 5%;
 
 }
 
-footer p{
+footer p {
     padding-top: 1%;
 }
 
 
 .container {
-  position: relative;
-  text-align: justify;
+    position: relative;
+    text-align: justify;
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 50vw;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #cc654b;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 50vw;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #cc654b;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 .text {
-  color: white;
-  font-size: 25px;
-  font-size-adjust: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw;
+    font-size-adjust: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }

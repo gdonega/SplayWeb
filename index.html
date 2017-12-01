@@ -1,252 +1,250 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title></title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/cssStandard.css"/>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cssStandard.css" />
 
-<body id="body">
+    <body id="body">
 
-    <nav class="navbar">
+        <nav class="navbar">
 
-      <div class="imagem">
-        <div id="imgLink">
-          <a href=#body>
+
+            <div id="imgLink">
+                <a href=#body>
               <img src="media/outros/Prancheta 1.svg" alt="Logo do Projeto">
           </a>
-        </div>
-      </div>
-
-      <div class="links">
-          <a  href="#ProjetoEmpresa">Projeto, Empresa & Escopo</a>
-          <a  href="#Funcionalidades">Funcionalidades</a>
-          <a  href="#Membros">Membros</a>
-      </div>
-  </nav>
-
-  <!--navegação mobile -inicio-->
-  <div class="navegSecun">
-
-      <button class="botaoMobile"> <img class="botaoMenu" src="media/sAtivo 7.svg" alt="menu"></button>
-
-      <nav class="navegacaoMobile">
-
-
-
-          <ul>
-
-             <div class="phat">
-              <button class="botaoEscondedor">X</button>
-              <li><a  href="#ProjetoEmpresa">Projeto & Empresa</a></li>
-              <li><a  href="#Escopo">Escopo</a></li>
-              <li><a  href="#Funcionalidades">Funcionalidades</a></li>
-              <li><a  href="#Membros">Membros</a></li>
-              </div>
-          </ul>
-      </nav>
-
-
-    <script src="JS/jquery-3.2.1.min.js"></script>
-      <script>
-          $(".botaoMobile").click(function() {
-              $(".navegacaoMobile").addClass('exibido');
-              $(".tituloMobile").addClass('exibido');
-              $(".botaoMobile").addClass('sumiu');
-              $(".navegSecun").addClass('confgTWO');
-              $("a").addClass('NavMenu');
-              $(".botaoEscondedor").addClass('exibido');
-          })
-
-          $(".botaoEscondedor").click(function() {
-              $(".navegacaoMobile").removeClass('exibido');
-              $(".tituloMobile").removeClass('exibido');
-              $(".botaoMobile").removeClass('sumiu');
-              $(".navegSecun").removeClass('confgTWO');
-              $("a").removeClass('NavMenu');
-              $(".botaoEscondedor").removeClass('exibido');
-          })
-
-          $("li a").click(function() {
-              $(".navegacaoMobile").removeClass('exibido');
-              $(".tituloMobile").removeClass('exibido');
-              $(".botaoMobile").removeClass('sumiu');
-              $(".navegSecun").removeClass('confgTWO');
-              $("a").removeClass('NavMenu');
-              $(".botaoEscondedor").removeClass('exibido');
-          })
-
-      </script>
-  </div>
-  <div id="primeiraParte">
-       <div id="logo">
-           <img src="media\logo.svg" alt="Nome do Projeto">
-       </div>
-
-   </div>
-
-<!-- Projeto & Empresa -->
-<div id="ProjetoEmpresa">
-  <section class="Projeto">
-
-       <div class="lateral1">
-        <h1>Projeto</h1>
-        <p class="texto">SPlay é uma plataforma online,
-profissional e educacional a
-distância visando mudar esta
-forma de aprendizagem. </p>
-      </div>
-
-      <div class="imgtype1">
-        <img src="media/Img1Ativo6.png"/>
-      </div>
-  </section>
-
-
-  <section class="Empresa">
-
-      <div class="imgtype2">
-        <img src="media/Img1Ativo6.png"/>
-      </div>
-
-      <div class="lateral2">
-        <h1>Empresa</h1>
-        <p class="texto">Texto sobre a empresa, nesse caso o senai</p>
-      </div>
-
-  </section>
-
-
-  <!-- Projeto - Escopo -->
-
-  <section id="Escopo">
-
-      <div class="lateral1">
-        <h1>Escopo do projeto</h1>
-        <p class="texto">Baseado no método de ensino microlearning (método de aprendizagem simples e direto) O SPLAY vai trabalhar com singles e playlists, singles para resolver problemas curtos e específicos, composto trailer e solução rápida e explicação detalhada
-          </p>
-      </div>
-
-      <div class="imgtype1">
-        <img src="media/Img1Ativo6.png"/>
-      </div>
-
-  </section>
-
-</div>
-
-
-<!-- Funcionalidades -->
-<div id="Funcionalidades">
-
-  <h1>Funcionalidades</h1>
-<div id="fullGaleria">
-  <div class="galeria">
-    <div class="container">
-  <img src="media/Img1Ativo6.png"  alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">O Trailer seria uma explicação rápida do problema, para o usuário identificar se ele realmente necessita do conteúdo apresentado, para não perder tempo vendo o vídeo inteiro ou pulando partes.</div>
-  </div>
-</div>
- </div>
-
- <div class="galeria">
-    <div class="container">
-  <img src="media/Img1Ativo6.png"  alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">A solução rápida seria uma solução do problema apresentado anteriormente, mostrando o passo a passo e como será feita esta resolução.</div>
-  </div>
-</div>
-  </div>
-
-
-  <div class="galeria">
-    <div class="container">
-      <img src="media/Img1Ativo6.png"  alt="Avatar" class="image">
-        <div class="overlay">
-        <div class="text">A explicação detalhada é para o usuário ver passo a passo o que está sendo feito e entender o que toda a estrutura está fazendo.</div>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- Membros -->
-    <div id="Membros">
-      <h1>Membros - Web-Design</h1>
-        <div class="MembrosWebDesign">
-            <div>
-              <img src="media/GDQ.jpg"/>
-              <p>Gustavo Donegá</p>
             </div>
 
-            <div>
-              <img src="media/BM.jpg"/>
-              <p>Bianca Mancini</p>
+
+            <div class="links">
+                <a href="#ProjetoEmpresa">Projeto, Empresa & Escopo</a>
+                <a href="#Funcionalidades">Funcionalidades</a>
+                <a href="#Membros">Membros</a>
             </div>
+        </nav>
+
+        <!--navegação mobile -inicio-->
+        <div class="navegSecun">
+
+            <button class="botaoMobile"> <img class="botaoMenu" src="media/sAtivo 7.svg" alt="menu"></button>
+
+            <nav class="navegacaoMobile">
+
+
+
+                <ul>
+
+                    <div class="phat">
+                        <button class="botaoEscondedor">X</button>
+                        <li><a href="#ProjetoEmpresa">Projeto & Empresa</a></li>
+                        <li><a href="#Escopo">Escopo</a></li>
+                        <li><a href="#Funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#Membros">Membros</a></li>
+                    </div>
+                </ul>
+            </nav>
+
+
+            <script src="JS/jquery-3.2.1.min.js"></script>
+            <script>
+                $(".botaoMobile").click(function() {
+                    $(".navegacaoMobile").addClass('exibido');
+                    $(".tituloMobile").addClass('exibido');
+                    $(".botaoMobile").addClass('sumiu');
+                    $(".navegSecun").addClass('confgTWO');
+                    $("a").addClass('NavMenu');
+                    $(".botaoEscondedor").addClass('exibido');
+                })
+
+                $(".botaoEscondedor").click(function() {
+                    $(".navegacaoMobile").removeClass('exibido');
+                    $(".tituloMobile").removeClass('exibido');
+                    $(".botaoMobile").removeClass('sumiu');
+                    $(".navegSecun").removeClass('confgTWO');
+                    $("a").removeClass('NavMenu');
+                    $(".botaoEscondedor").removeClass('exibido');
+                })
+
+                $("li a").click(function() {
+                    $(".navegacaoMobile").removeClass('exibido');
+                    $(".tituloMobile").removeClass('exibido');
+                    $(".botaoMobile").removeClass('sumiu');
+                    $(".navegSecun").removeClass('confgTWO');
+                    $("a").removeClass('NavMenu');
+                    $(".botaoEscondedor").removeClass('exibido');
+                })
+
+            </script>
+        </div>
+        <div id="primeiraParte">
+            <div id="logo">
+                <img src="media\logo.svg" alt="Nome do Projeto">
+            </div>
+
         </div>
 
-        <div class="MembrosEquipe">
-          <h1>Membros Equipe</h1>
-          <img id="equipe" src="media/Equipe.png"/>
+        <!-- Projeto & Empresa -->
+        <div id="ProjetoEmpresa">
+            <section class="Projeto">
 
-          <div id="BackEnd">
-               <h1>Back End</h1>
-               <div>
-                 <img class="func" src="media/perfil-generico.jpg"/>
-                 <p>Luciano Bispo dos Santos Junior</p>
-               </div>
+                <div class="lateral1">
+                    <h1>Projeto</h1>
+                    <p class="texto">SPlay é uma plataforma online, profissional e educacional a distância visando mudar esta forma de aprendizagem. </p>
+                </div>
 
-               <section class="piramide">
-               <div>
-                <img class="func" src="media/perfil-generico.jpg"/>
-                <p>Daniel Kenji Kobashigawa</p>
-               </div>
-
-              <div>
-                <img class="func" src="media/perfil-generico.jpg"/>
-                <p>Daniel Clemente Silva </p>
-              </div>
+                <div class="imgtype1">
+                    <img src="media/Img1Ativo6.png" />
+                </div>
             </section>
-          </div>
 
-          <div id="FrontEnd">
-            <h1>Front End</h1>
-              <div>
-                <img class="func" src="media/perfil-generico.jpg"/>
-                <p>Raul Rodrigues Arcoverde(Gerente)</p>
-              </div>
 
-              <section class="piramide">
+            <section class="Empresa">
+
+                <div class="imgtype2">
+                    <img src="media/Img1Ativo6.png" />
+                </div>
+
+                <div class="lateral2">
+                    <h1>Empresa</h1>
+                    <p class="texto">Texto sobre a empresa, nesse caso o senai</p>
+                </div>
+
+            </section>
+
+
+            <!-- Projeto - Escopo -->
+
+            <section id="Escopo">
+
+                <div class="lateral1">
+                    <h1>Escopo do projeto</h1>
+                    <p class="texto">Baseado no método de ensino microlearning (método de aprendizagem simples e direto) O SPLAY vai trabalhar com singles e playlists, singles para resolver problemas curtos e específicos, composto trailer e solução rápida e explicação detalhada
+                    </p>
+                </div>
+
+                <div class="imgtype1">
+                    <img src="media/Img1Ativo6.png" />
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Funcionalidades -->
+        <div id="Funcionalidades">
+
+            <h1>Funcionalidades</h1>
+            <div id="fullGaleria">
+                <div class="galeria">
+                    <div class="container">
+                        <img src="media/Img1Ativo6.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text">O Trailer seria uma explicação rápida do problema, para o usuário identificar se ele realmente necessita do conteúdo apresentado, para não perder tempo vendo o vídeo inteiro ou pulando partes.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galeria">
+                    <div class="container">
+                        <img src="media/Img1Ativo6.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text">A solução rápida seria uma solução do problema apresentado anteriormente, mostrando o passo a passo e como será feita esta resolução.</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="galeria">
+                    <div class="container">
+                        <img src="media/Img1Ativo6.png" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text">A explicação detalhada é para o usuário ver passo a passo o que está sendo feito e entender o que toda a estrutura está fazendo.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Membros -->
+        <div id="Membros">
+            <h1>Membros - Web-Design</h1>
+            <div class="MembrosWebDesign">
                 <div>
-                <img class="func" src="media/perfil-generico.jpg"/>
-                <p>João Matheus Rodrigues Silva</p>
-              </div>
+                    <img src="media/GDQ.jpg" />
+                    <p>Gustavo Donegá</p>
+                </div>
 
-              <div>
-                <img class="func" src="media/perfil-generico.jpg"/>
-                <p>Luis Gustavo Costa Almeida</p>
-              </div>
-            </section>
+                <div>
+                    <img src="media/BM.jpg" />
+                    <p>Bianca Mancini</p>
+                </div>
+            </div>
 
-              <div>
-                <img class="func" src="media/perfil-generico.jpg"/>
-                <p>Vinicios Oliveira Souza</p>
-              </div>
-          </div>
+            <div class="MembrosEquipe">
+                <h1>Membros Equipe</h1>
+                <img id="equipe" src="media/Equipe.png" />
+
+                <div id="BackEnd">
+                    <h1>Back End</h1>
+                    <div>
+                        <img class="func" src="media/perfil-generico.jpg" />
+                        <p>Luciano Bispo dos Santos Junior</p>
+                    </div>
+
+                    <section class="piramide">
+                        <div>
+                            <img class="func" src="media/perfil-generico.jpg" />
+                            <p>Daniel Kenji Kobashigawa</p>
+                        </div>
+
+                        <div>
+                            <img class="func" src="media/perfil-generico.jpg" />
+                            <p>Daniel Clemente Silva </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="FrontEnd">
+                    <h1>Front End</h1>
+                    <div>
+                        <img class="func" src="media/perfil-generico.jpg" />
+                        <p>Raul Rodrigues Arcoverde(Gerente)</p>
+                    </div>
+
+                    <section class="piramide">
+                        <div>
+                            <img class="func" src="media/perfil-generico.jpg" />
+                            <p>João Matheus Rodrigues Silva</p>
+                        </div>
+
+                        <div>
+                            <img class="func" src="media/perfil-generico.jpg" />
+                            <p>Luis Gustavo Costa Almeida</p>
+                        </div>
+                    </section>
+
+                    <div>
+                        <img class="func" src="media/perfil-generico.jpg" />
+                        <p>Vinicios Oliveira Souza</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-<footer>
-    <div>
-      <img src="media/senai.jpg"/>
-    </div>
+        <footer>
+            <div>
+                <img src="media/senai.jpg" />
+            </div>
 
-    <div>
-      <p>Alamenda Barão de Limeira, 539 - Santa Cecília, São Paulo </p>
-    </div>
-</footer>
-</body>
+            <div>
+                <p>Alamenda Barão de Limeira, 539 - Santa Cecília, São Paulo </p>
+            </div>
+        </footer>
+    </body>
 
 </html>
