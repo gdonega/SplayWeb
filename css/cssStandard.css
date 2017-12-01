@@ -540,7 +540,7 @@ a:hover {
 
 
 .galeria {
-    margin: 5px;
+    margin-bottom: 50px;
     float: left;
     width: 100%;
     padding-left: 2%;
@@ -694,7 +694,7 @@ footer p {
 
 .text {
     color: white;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-size-adjust: auto;
     position: absolute;
     top: 50%;
