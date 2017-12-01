@@ -191,16 +191,11 @@ a:hover {
 
     }
 
-
-    /*  nav .imagem {
-        flex: 0;
-        display: flex;
-        align-self: center;
-        align-items: center;
-    }*/
-    #imgLink a img {
+    #imgLinkimg{
         width: 3.6vw;
+        transition: color, 0.5s;
     }
+
 
 
     #imgLink {
