@@ -153,7 +153,7 @@ a:hover {
         /*outras configurações*/
         background-image: url(../media/outros/lala.svg);
         background-repeat: no-repeat;
-        background-size: 500vw;
+        background-size: 100vw;
         width: 100%;
 
         position: fixed;
@@ -164,7 +164,7 @@ a:hover {
 
 
         margin: 0px;
-top: 0px;
+        top: 0px;
         padding-left: 5vw;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -257,7 +257,8 @@ top: 0px;
         /*outras configurações*/
         background-image: url(../media/outros/lala.svg);
         background-repeat: no-repeat;
-        background-size: 200vw;
+        background-size: 170vw;
+        background-position: center;
         width: 100%;
 
 
