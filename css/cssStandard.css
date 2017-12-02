@@ -733,7 +733,7 @@ a:hover {
     display: flex ;
     flex-direction: column;
   }
-  .imgGal{
+  .container img{
     width: 5px;
     height: 100%;
   }
