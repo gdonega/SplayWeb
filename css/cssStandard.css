@@ -253,10 +253,14 @@ top: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /*outras configs*/
+
+        /*outras configurações*/
         background-image: url(../media/outros/lala.svg);
         background-repeat: no-repeat;
-        background-size: 200%;
+        background-size: 100vw;
+        width: 100%;
+
+
 
         border: none;
 
@@ -265,7 +269,7 @@ top: 0px;
     .botaoMobile img {
 
         /*outras configs*/
-        width: 8vw;
+        width: 6vw;
 
     }
 
@@ -354,7 +358,7 @@ top: 0px;
     .navegacaoMobile ul li a {
         position: absolute;
         margin: 5px;
-        font-size: 30px;
+        font-size: 20px;
         left: 0px;
     }
 
