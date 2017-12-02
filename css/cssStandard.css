@@ -621,54 +621,66 @@ a:hover {
       font-size: 20px;
     }
 }
+@media screen and (min-width: 800px) {
+  #fullGaleria {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
-#fullGaleria {
+
+
+  #Funcionalidades {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #f4f3c9;
+      color: #cc654b;
+      font-size: 100px;
+      width: 100%;
+      height: 100%;
+
+      padding-bottom: 3%;
+  }
+
+  #Funcionalidades h1 {
+      padding-top: 2%;
+      padding-bottom: 2%;
+      justify-content: space-around;
+      padding-left: 10%;
+      padding-right: 10%;
+
+  }
+
+
+
+  .galeria {
+      margin-top: 40px;
+      float: left;
+      width: 100%;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+
+
+  .galeria img {
+      width: 50vw;
+      height: auto;
+      display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  #Funcionalidades{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-#Funcionalidades {
+  }
+  .galeria{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #f4f3c9;
-    color: #cc654b;
-    font-size: 100px;
-    width: 100%;
-    height: 100%;
-
-    padding-bottom: 3%;
-}
-
-#Funcionalidades h1 {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    justify-content: space-around;
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-
-
-
-.galeria {
-    margin-top: 40px;
-    float: left;
-    width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-
-.galeria img {
-    width: 50vw;
-    height: auto;
-    display: block;
+  }
+  .container{
+    display: flex;
+  }
 }
 
 #Membros {
