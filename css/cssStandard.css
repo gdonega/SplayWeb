@@ -673,13 +673,19 @@ a:hover {
 }
 @media screen and (max-width: 800px) {
   #Funcionalidades{
-    display: flex;
+    display: flex !important;
   }
   .galeria{
-    display: flex;
+    display: none;
   }
   .container{
-    display: flex;
+    display: none;
+  }
+  .imgGal{
+    display: flex !important;
+  }
+  .text{
+    display: flex !important;
   }
 }
 
