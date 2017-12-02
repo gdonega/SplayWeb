@@ -616,6 +616,10 @@ a:hover {
         width: 40vw;
         height: 100%;
     }
+
+    .texto{
+      font-size: 50px;
+    }
 }
 
 #fullGaleria {
