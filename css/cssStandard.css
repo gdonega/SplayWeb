@@ -358,7 +358,7 @@ top: 0px;
     .navegacaoMobile ul li a {
         position: absolute;
         margin: 5px;
-        font-size: 4px;
+        font-size: 1px;
         left: 0px;
     }
 
@@ -367,6 +367,9 @@ top: 0px;
 }
 
 /*/nav bar - fim/*/
+
+/**--------*pcs*/
+
 
 /*/logan - inicio/*/
 
