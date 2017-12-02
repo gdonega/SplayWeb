@@ -551,8 +551,15 @@ top: 0px;
         /* Standard syntax (must be last) */
     }
 
+
     .lateral1{
       order: 1;
+    }
+    .lateral1 p{
+      font-size: 30px;
+    }
+    .lateral1 h1{
+      font-size: 40px;
     }
     .imgtype2{
       order: 2
