@@ -564,6 +564,12 @@ top: 0px;
     .imgtype2{
       order: 2
     }
+    .lateral2 p{
+      font-size: 30px;
+    }
+    .lateral2 h1{
+      font-size: 40px;
+    }
     .imgtype1{
       order: 2
     }
@@ -574,7 +580,6 @@ top: 0px;
     .Empresa {
       flex-direction: column;
         display: flex;
-        font-size: 30px;
         background-color: #CC654B;
 
     }
@@ -583,7 +588,6 @@ top: 0px;
     #Escopo {
         display: flex;
         flex-direction: column;
-        font-size: 30px;
         background: -webkit-linear-gradient(#CC654B, #FFB200);
         /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(#CC654B, #FFB200);
