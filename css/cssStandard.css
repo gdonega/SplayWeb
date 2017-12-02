@@ -715,18 +715,26 @@ a:hover {
 @media screen and (max-width: 800px) {
   #Funcionalidades{
     display: flex ;
+    flex-direction: column;
   }
   .galeria{
     display: flex;
+    flex-direction: column;
   }
   .container{
     display: flex;
+    flex-direction: column;
   }
   .imgGal{
     display: flex ;
+    flex-direction: column;
   }
   .text{
     display: flex ;
+    flex-direction: column;
+  }
+  .imgGal{
+    width: 50px;
   }
 }
 
