@@ -257,7 +257,7 @@ top: 0px;
         /*outras configurações*/
         background-image: url(../media/outros/lala.svg);
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: 200vw;
         width: 100%;
 
 
@@ -269,7 +269,7 @@ top: 0px;
     .botaoMobile img {
 
         /*outras configs*/
-        width: 6vw;
+        width: 8vw;
 
     }
 
