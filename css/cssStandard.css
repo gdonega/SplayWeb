@@ -376,9 +376,9 @@ a:hover {
     flex-direction: column-reverse;
 
     /*configuração da imagem*/
-    background-image: url(../media/bg-top.svg);
+    background-repeat: no-repeat;
     background-size: 100vw;
-    background-attachment: fixed;
+    width: 100%;
 
     /*configuração do fundo em si*/
     width: 100%;
@@ -500,12 +500,12 @@ a:hover {
   }
 
   .imgtype1 img {
-      width: 40vw;
+      width: 30px;
       height: 100%;
   }
 
   .imgtype2 img {
-      width: 40vw;
+      width: 30px;
       height: 100%;
   }
 }
@@ -577,10 +577,6 @@ a:hover {
         justify-content: center;
         order: 1;
     }
-    .lateral1 h1{
-      order: 1;
-    }
-
 
     .imgtype1 {
         display: flex;
@@ -591,13 +587,6 @@ a:hover {
         order: 2;
     }
 
-    .lateral1 p{
-      order: 3;
-    }
-
-.lateral2 h1{
-  order: 1;
-}
     .imgtype2 {
         display: flex;
         margin: 1vw;
@@ -607,9 +596,6 @@ a:hover {
           order: 2;
     }
 
-    .lateral2 p{
-      order: 3;
-    }
     .lateral2 {
         display: flex;
         flex-direction: column;
@@ -618,16 +604,16 @@ a:hover {
         align-self: center;
         align-items: center;
         justify-content: center;
-
+          order: 1;
     }
 
     .imgtype1 img {
-        width: 70vw;
+        width: 40vw;
         height: 100%;
     }
 
     .imgtype2 img {
-        width: 70vw;
+        width: 40vw;
         height: 100%;
     }
 
@@ -733,9 +719,11 @@ a:hover {
   }
   .galeria{
     display: flex;
+    flex-direction: column;
   }
   .container{
     display: flex;
+    flex-direction: column;
   }
   .imgGal{
     display: flex ;
@@ -744,7 +732,6 @@ a:hover {
   .text{
     display: flex ;
     flex-direction: column;
-
   }
   .imgGal{
     width: 5px;
