@@ -164,7 +164,7 @@ a:hover {
 
 
         margin: 0px;
-        top: 0px;
+top: 0px;
         padding-left: 5vw;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -324,6 +324,10 @@ a:hover {
         margin: 50px;
 
     }
+    .phat a {
+        font-size: 50px !important;
+
+    }
 
     /*botão de fechar o menu*/
     .botaoEscondedor {
@@ -345,6 +349,7 @@ a:hover {
     /*configuração do X*/
     .botaoEscondedor.exibido {
         display: block;
+        font-size: 50px !important;
 
     }
 
@@ -353,7 +358,7 @@ a:hover {
     .navegacaoMobile ul li a {
         position: absolute;
         margin: 5px;
-        font-size: 20px !important;
+        font-size: 1px;
         left: 0px;
     }
 
@@ -376,9 +381,9 @@ a:hover {
     flex-direction: column-reverse;
 
     /*configuração da imagem*/
-    background-repeat: no-repeat;
+    background-image: url(../media/bg-top.svg);
     background-size: 100vw;
-    width: 100%;
+    background-attachment: fixed;
 
     /*configuração do fundo em si*/
     width: 100%;
@@ -408,335 +413,152 @@ a:hover {
 
 /*/primeiraParte - fim/*/
 
-/*projet e empresa - pcs*/
-@media screen and (min-width: 800px) {
-
-  #ProjetoEmpresa H1 {
-      color: white;
-  }
-
-  #ProjetoEmpresa p {
-      color: white;
-  }
-
-  #ProjetoEmpresa section {
-      padding: 2vw;
-  }
-
-  #ProjetoEmpresa section {
-      justify-content: center;
-      align-self: center;
-      align-items: center;
-  }
-
-  .Projeto {
-      display: flex;
-      background: -webkit-linear-gradient(#FFB200, #CC654B);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#FFB200, #CC654B);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#FFB200, #CC654B);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#FFB200, #CC654B);
-      /* Standard syntax (must be last) */
-  }
-
-
-
-  .Empresa {
-      display: flex;
-      font-size: 30px;
-      background-color: #CC654B;
-
-  }
-
-
-  #Escopo {
-      display: flex;
-      font-size: 30px;
-      background: -webkit-linear-gradient(#CC654B, #FFB200);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#CC654B, #FFB200);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#CC654B, #FFB200);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#CC654B, #FFB200);
-      /* Standard syntax (must be last) */
-  }
-
-  .lateral1 {
-      display: flex;
-      flex-direction: column;
-      padding: 1vw;
-      flex: 2;
-      align-self: center;
-      justify-content: center;
-  }
-
-  .imgtype1 {
-      display: flex;
-      margin: 1vw;
-      flex: 2;
-      align-self: center;
-      justify-content: center;
-  }
-
-  .imgtype2 {
-      display: flex;
-      margin: 1vw;
-      flex: 2;
-      align-self: center;
-      justify-content: center;
-  }
-
-  .lateral2 {
-      display: flex;
-      flex-direction: column;
-      padding: 1vw;
-      flex: 2;
-      align-self: center;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .imgtype1 img {
-      width: 70px;
-      height: 100%;
-  }
-
-  .imgtype2 img {
-      width: 70px;
-      height: 100%;
-  }
+#ProjetoEmpresa H1 {
+    color: white;
 }
 
-@media screen and (max-width: 800px) {
-
-    #ProjetoEmpresa H1 {
-        color: white;
-    }
-
-    #ProjetoEmpresa p {
-        color: white;
-    }
-
-    #ProjetoEmpresa section {
-        padding: 2vw;
-    }
-
-    #ProjetoEmpresa section {
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-    }
-
-    .Projeto {
-        display: flex;
-        flex-direction: column;
-        background: -webkit-linear-gradient(#FFB200, #CC654B);
-        /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#FFB200, #CC654B);
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#FFB200, #CC654B);
-        /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#FFB200, #CC654B);
-        /* Standard syntax (must be last) */
-    }
-
-
-
-    .Empresa {
-        display: flex;
-                flex-direction: column;
-        font-size: 30px;
-        background-color: #CC654B;
-
-    }
-
-
-    #Escopo {
-        display: flex;
-                flex-direction: column;
-        font-size: 30px;
-        background: -webkit-linear-gradient(#CC654B, #FFB200);
-        /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#CC654B, #FFB200);
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#CC654B, #FFB200);
-        /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#CC654B, #FFB200);
-        /* Standard syntax (must be last) */
-    }
-
-    .lateral1 {
-        display: flex;
-        flex-direction: column;
-        padding: 1vw;
-        flex: 2;
-        align-self: center;
-        justify-content: center;
-        order: 1;
-    }
-
-    .imgtype1 {
-        display: flex;
-        margin: 1vw;
-        flex: 2;
-        align-self: center;
-        justify-content: center;
-        order: 2;
-    }
-
-    .imgtype2 {
-        display: flex;
-        margin: 1vw;
-        flex: 2;
-        align-self: center;
-        justify-content: center;
-          order: 2;
-    }
-
-    .lateral2 {
-        display: flex;
-        flex-direction: column;
-        padding: 1vw;
-        flex: 2;
-        align-self: center;
-        align-items: center;
-        justify-content: center;
-          order: 1;
-    }
-
-    .imgtype1 img {
-        width: 40vw;
-        height: 100%;
-    }
-
-    .imgtype2 img {
-        width: 40vw;
-        height: 100%;
-    }
-
-    .texto{
-      font-size: 20px;
-    }
+#ProjetoEmpresa p {
+    color: white;
 }
-@media screen and (min-width: 800px) {
-  #fullGaleria {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+
+#ProjetoEmpresa section {
+    padding: 2vw;
+}
+
+#ProjetoEmpresa section {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.Projeto {
+    display: flex;
+    background: -webkit-linear-gradient(#FFB200, #CC654B);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFB200, #CC654B);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFB200, #CC654B);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFB200, #CC654B);
+    /* Standard syntax (must be last) */
+}
 
 
 
-  #Funcionalidades {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      background-color: #f4f3c9;
-      color: #cc654b;
-      font-size: 100px;
-      width: 100%;
-      height: 100%;
-
-      padding-bottom: 3%;
-  }
-
-  #Funcionalidades h1 {
-      padding-top: 2%;
-      padding-bottom: 2%;
-      justify-content: space-around;
-      padding-left: 10%;
-      padding-right: 10%;
-
-  }
-
-
-
-  .galeria {
-      margin-top: 40px;
-      float: left;
-      width: 100%;
-      padding-left: 2%;
-      padding-right: 2%;
-  }
-
-
-  .galeria img {
-      width: 50vw;
-      height: auto;
-      display: block;
-  }
-
-  .container {
-      position: relative;
-      text-align: justify;
-  }
-
-  .image {
-      display: block;
-      width: 100%;
-      height: auto;
-  }
-
-  .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 50vw;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #cc654b;
-  }
-
-  .container:hover .overlay {
-      opacity: 1;
-  }
-
-  .text {
-      color: white;
-      font-size: 1.8vw;
-      font-size-adjust: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-  }
+.Empresa {
+    display: flex;
+    font-size: 30px;
+    background-color: #CC654B;
 
 }
-@media screen and (max-width: 800px) {
-  #Funcionalidades{
-    display: flex ;
-    flex-direction: column;
-  }
-  .galeria{
+
+
+#Escopo {
+    display: flex;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#CC654B, #FFB200);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#CC654B, #FFB200);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#CC654B, #FFB200);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#CC654B, #FFB200);
+    /* Standard syntax (must be last) */
+}
+
+.lateral1 {
     display: flex;
     flex-direction: column;
-  }
-  .container{
+    padding: 1vw;
+    flex: 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.imgtype1 {
+    display: flex;
+    margin: 1vw;
+    flex: 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.imgtype2 {
+    display: flex;
+    margin: 1vw;
+    flex: 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.lateral2 {
     display: flex;
     flex-direction: column;
-  }
-  .imgGal{
-    display: flex ;
-    flex-direction: column;
-  }
-  .text{
-    display: flex ;
-    flex-direction: column;
-  }
-  .container img{
-    width: 10px;
+    padding: 1vw;
+    flex: 2;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgtype1 img {
+    width: 40vw;
     height: 100%;
-  }
+}
+
+.imgtype2 img {
+    width: 40vw;
+    height: 100%;
+}
+
+
+#fullGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#Funcionalidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f3c9;
+    color: #cc654b;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 3%;
+}
+
+#Funcionalidades h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+
+
+.galeria {
+    margin-top: 40px;
+    float: left;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+.galeria img {
+    width: 50vw;
+    height: auto;
+    display: block;
 }
 
 #Membros {
@@ -846,4 +668,45 @@ footer img {
 
 footer p {
     padding-top: 1%;
+}
+
+
+.container {
+    position: relative;
+    text-align: justify;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 50vw;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #cc654b;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 1.8vw;
+    font-size-adjust: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
