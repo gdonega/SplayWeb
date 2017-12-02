@@ -608,12 +608,12 @@ a:hover {
     }
 
     .imgtype1 img {
-        width: 40vw;
+        width: 70vw;
         height: 100%;
     }
 
     .imgtype2 img {
-        width: 40vw;
+        width: 70vw;
         height: 100%;
     }
 
@@ -732,9 +732,11 @@ a:hover {
   .text{
     display: flex ;
     flex-direction: column;
+
   }
   .imgGal{
-    width: 50px;
+    width: 5px;
+    height: 100%;
   }
 }
 
