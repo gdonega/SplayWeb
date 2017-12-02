@@ -500,12 +500,12 @@ a:hover {
   }
 
   .imgtype1 img {
-      width: 40px;
+      width: 70px;
       height: 100%;
   }
 
   .imgtype2 img {
-      width: 40px;
+      width: 70px;
       height: 100%;
   }
 }
@@ -734,7 +734,7 @@ a:hover {
     flex-direction: column;
   }
   .container img{
-    width: 5px;
+    width: 10px;
     height: 100%;
   }
 }
