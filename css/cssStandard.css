@@ -670,22 +670,63 @@ a:hover {
       height: auto;
       display: block;
   }
+
+  .container {
+      position: relative;
+      text-align: justify;
+  }
+
+  .image {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 50vw;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #cc654b;
+  }
+
+  .container:hover .overlay {
+      opacity: 1;
+  }
+
+  .text {
+      color: white;
+      font-size: 1.8vw;
+      font-size-adjust: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+  }
+
 }
 @media screen and (max-width: 800px) {
   #Funcionalidades{
-    display: flex !important;
+    display: flex ;
   }
   .galeria{
-    display: none;
+    display: flex;
   }
   .container{
-    display: none;
+    display: flex;
   }
   .imgGal{
-    display: flex !important;
+    display: flex ;
   }
   .text{
-    display: flex !important;
+    display: flex ;
   }
 }
 
@@ -796,45 +837,4 @@ footer img {
 
 footer p {
     padding-top: 1%;
-}
-
-
-.container {
-    position: relative;
-    text-align: justify;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 50vw;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #cc654b;
-}
-
-.container:hover .overlay {
-    opacity: 1;
-}
-
-.text {
-    color: white;
-    font-size: 1.8vw;
-    font-size-adjust: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
