@@ -164,7 +164,7 @@ a:hover {
 
 
         margin: 0px;
-top: 0px;
+        top: 0px;
         padding-left: 5vw;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -407,6 +407,7 @@ top: 0px;
 }
 
 /*/primeiraParte - fim/*/
+@media screen and (min-width: 800px) {
 
 #ProjetoEmpresa H1 {
     color: white;
@@ -505,7 +506,7 @@ top: 0px;
     width: 40vw;
     height: 100%;
 }
-
+}
 
 #fullGaleria {
     display: flex;
